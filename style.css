@@ -1,0 +1,550 @@
+/* Reset and General Styles */
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  color: #373636;
+  margin: 0;
+  overflow-x: hidden; /* 横スクロールバーを非表示にする */
+}
+
+.inner {
+  width: 90%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.section_pdg {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  /*justify-content: space-between;  アイテムを均等に配置
+  gap: 30px;  コンテンツ間のスペースを設定 */
+}
+
+/* Navigation Styles */
+nav {
+  align-items: center;
+  background-color: #f5e199;
+  padding: 10px 40px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Full View Image */
+.full-view-image {
+  height: 500px;
+  background-image: url("./img/top.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section Styles */
+.section {
+  background-color: #fffae7;
+  margin: 0 calc(50% - 50vw);
+  padding: 4px calc(50vw - 50% + 8px);
+  width: 100vw;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.6rem; /* Adjust the font size as needed */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: 50px;
+}
+
+/* Activity Styles */
+.activity {
+  padding: 60px;
+}
+
+#activity {
+  background-color: #ffffff;
+}
+
+.activity-item {
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.activity-item:last-child {
+  margin-right: 0; /* 最後のアイテムの右側のマージンをゼロに設定 */
+}
+
+.activity-image img {
+  max-width: 150px;
+  max-height: 150px;
+  margin-bottom: 10px;
+}
+
+/* Members Section Styles */
+
+.member {
+  text-align: center;
+  max-width: 220px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px 15px;
+  margin: 10px;
+}
+
+.member-image img {
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+/* SNS and Schedule Styles */
+#sns,
+#schedule {
+  background-color: #ffffff;
+}
+
+.center {
+}
+
+/* Button Styles */
+.btn {
+  margin: 10px; /* Adjust spacing between buttons as needed */
+}
+
+.btn a {
+  display: inline-block; /* Make the buttons inline */
+  margin: 0;
+  padding: 14px 40px;
+  border-radius: 30px;
+  max-width: 300px;
+  color: #f8b62b;
+  font-family: 秀英丸ゴシック B;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #f8b62b;
+}
+
+.btn:hover a {
+  background-color: #f8b62b;
+  color: #fff;
+}
+
+.btn a:hover svg {
+  fill: #fff;
+}
+
+.btn:not(.cta_contact):not(.cta_support)
+  a:not([target="_blank"]):not([href$=".pdf"]):not([href$=".jpg"]):not(
+    [href$=".png"]
+  )::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 20px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px;
+  border-right: solid 2px;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-out;
+}
+
+.btn.btn-next_page a {
+  max-width: 100%;
+  border-radius: 0;
+  text-align: left;
+}
+
+/* Background Styles */
+.lp_sec:nth-child(2n) {
+  background: url(./img/ptn_border.png);
+}
+
+.lp_sec_contact {
+  background: #fffaee;
+}
+
+.bg-main {
+  background-color: #69d4d3;
+}
+
+.bg-sub {
+  background-color: #fadf69;
+}
+
+.bg-wh {
+  background-color: #fff;
+}
+
+/* Formy Styles */
+/* ... (Your existing Formy styles) */
+
+/* Image Styles */
+.img-ctr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-trim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-trim.pos_rel::before {
+  content: "";
+  display: block;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+
+/* Title Styles */
+.ttl-01,
+.ttl-02,
+.ttl-03 {
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.ttl-01 {
+  font-size: 2.4rem;
+  padding-bottom: 60px;
+}
+
+.ttl-02 {
+  font-size: 2.375rem;
+  color: #ffa509;
+}
+
+.content-body p {
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+
+/* Button Row Styles */
+.lp_parts {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-right: 20px;
+}
+
+.btn:last-child {
+  margin-right: 0;
+}
+/* */
+/* ##############################################################################
+
+    FORMY
+
+############################################################################## */
+/*　フォーム内のテーブル要素 */
+#form table {
+  width: 100%;
+}
+
+/*　フォーム内のテーブルセル（ヘッダーセルとデータセル） */
+#form th,
+#form td {
+  padding: 16px;
+  vertical-align: middle;
+  border-bottom: solid 1px #eee;
+}
+
+#form th {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+  width: 34%;
+}
+
+/* 各種のフォーム入力要素 */
+/* 幅、ボーダー半径、垂直方向 */
+#form table input[type="text"],
+#form table input[type="email"],
+#form table input[type="tel"],
+#form table input[type="date"],
+#form table input[type="password"],
+#form table textarea {
+  width: 100%;
+  border-radius: 3px;
+  vertical-align: bottom;
+}
+
+#form table input[type="text"],
+#form table input[type="email"],
+#form table input[type="tel"],
+#form table input[type="date"],
+#form table input[type="password"],
+#form select,
+#form textarea {
+  margin: 0;
+  padding: 5px 15px;
+  border: 1px solid #ccc;
+  font: inherit;
+  font-size: 1rem;
+}
+
+#form textarea {
+  height: 100px;
+}
+/* セレクトドロップダウンに対するスタイル */
+#form select {
+  height: 40px;
+}
+
+/* フォーム内の順序なしリスト */
+#form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* インプット要素ホバー時 */
+#form input:hover {
+  opacity: 0.7;
+}
+
+/* テキストエリアホバー時 */
+#form textarea:hover {
+  opacity: 0.7;
+}
+
+/* フォーカス時の入力要素 */
+#form input:focus {
+  outline: none;
+}
+
+/*  フォームのヘルプテキスト */
+.help_text {
+  font-size: 0.875rem; /* 14px */
+  color: #999;
+}
+
+/*  ヘルプテキスト非表示 */
+.hidden_help {
+  display: none;
+}
+
+.error_msg {
+  color: red;
+}
+
+/* 必須項目を示すアイコン */
+.requiredIcon {
+  background-color: #f55;
+  color: #fff;
+  margin: 0 0 0 1em;
+  font-size: 0.75rem; /* 12px */
+  padding: 2px 5px;
+  border-radius: 3px;
+  float: right;
+}
+
+/* フォームボタンのコンテナ */
+#form_btn {
+  padding-top: 32px;
+  text-align: center;
+}
+
+/* フォームの送信ボタン */
+#form_btn input {
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+  padding: 16px 32px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #d09e52; /* ボタンの背景色 */
+  transition: background-color 0.3s ease; /* ホバーエフェクトのスムーズな変化 */
+}
+
+/* ラジオボタンおよびチェックボックス入力を非表示 */
+#form ul li input[type="radio"],
+#form ul li input[type="checkbox"] {
+  display: none !important;
+}
+
+/* ラジオボタンおよびチェックボックス入力に関連するラベル */
+#form ul li label {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 8px 0.5em 40px;
+  line-height: 1.6;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+/* フォーム送信ボタンのホバー時、背景色を変更 */
+#form_btn input:hover {
+  background-color: #bd9e46; /* ホバー時の背景色 */
+}
+
+/* ラベルの前に擬似要素を作成、チェックボックス */
+#form ul li label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #788b93;
+  left: 16px;
+  top: 12px;
+}
+
+/* ラジオボタンに対する追加のスタイル */
+#form ul li input[type="radio"] + label::before {
+  border-radius: 10px;
+}
+
+/* ラジオボタンチェック時 */
+#form ul li input[type="radio"]:checked + label,
+#form ul li input[type="checkbox"]:checked + label {
+  color: #e75f5f;
+  font-weight: bold;
+}
+
+#form ul li input[type="radio"]:checked + label::before,
+#form ul li input[type="checkbox"]:checked + label::before {
+  border-color: #e75f5f;
+}
+
+#form ul li input[type="radio"]:checked + label::after,
+#form ul li input[type="checkbox"]:checked + label::after {
+  content: "";
+  width: 10px;
+  height: 18px;
+  top: 4px;
+  left: 20px;
+  border-right: 2px solid #e75f5f;
+  border-bottom: 2px solid #e75f5f;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* フォームのさまざまな状態に対するスタイル */
+.form_confirm {
+  background-color: #4dbaff;
+}
+.form_submit_disabled {
+  background-color: #ccc;
+}
+#form_btn .form_submit_disabled:hover {
+  opacity: 1;
+  cursor: default;
+}
+.autoConfirmBack {
+  background-color: #aaa;
+}
+.form_send {
+  background-color: #ff6600;
+}
+
+/* 必須セクションに対するスタイル */
+#total_required {
+  padding: 16px;
+  color: #f55555;
+  text-align: center;
+}
+
+/* レスポンシブ */
+@media print, screen and (min-width: 768px) {
+  #form .confirm-message {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  #form th,
+  #form td {
+    display: block;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #form th {
+    border-bottom: none;
+    padding-bottom: 0;
+    white-space: normal;
+    font-weight: bold;
+  }
+  #form td {
+    padding-top: 0;
+  }
+  #btn {
+    padding-top: 8px;
+  }
+  #btn input {
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+  }
+  .autoConfirmBack {
+    margin-bottom: 8px;
+  }
+}
+
+/* フッター */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #174a5c;
+  color: white;
+  text-align: center;
+}
+ul.footer-menu li {
+  display: inline;
+}
